@@ -1,0 +1,106 @@
+
+.box {
+  width: 120px;
+  height: 120px;
+  background-color: aquamarine;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-block: 20px;
+}
+
+.box {
+  animation: rotate 3s infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(120deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.box2 {
+  width: 120px;
+  height: 120px;
+  background-color: red;
+}
+.box2 {
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+.box3 {
+  width: 120px;
+  height: 120px;
+  background-color: blueviolet;
+}
+.box3 {
+  animation: slideIn 2s infinite;
+}
+@keyframes slideIn {
+  0% {
+    transform: translateX(-50%);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(50%);
+  }
+}
+.box4 {
+  width: 120px;
+  height: 120px;
+  background-color: rgb(56, 56, 55);
+}
+
+.box4 {
+  animation: fadeIn 2s infinite;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.box5 {
+  width: 120px;
+  height: 120px;
+  background-color: darkblue;
+}
+
+.box5 {animation: bounce 2s infinite;}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
